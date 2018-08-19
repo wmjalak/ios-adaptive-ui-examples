@@ -18,10 +18,12 @@ Some notes and guidance on how to do basic layouts in Xcode by using for example
 
 # StackView.storyboard
 
-Add Constraints to label-stack at the top of the screen: 
+Add Constraints to label-stack at the top of the screen:
+
 ![alt text](./images/label_constraints.png "Label Constrains")
 
 After adding the image view into the horizontal stack view, it was shown in its real size (466x466). Add the new width and height constraints (128x128) to image view:
+
 ![alt text](./images/image_constraints.png "Image Constrains")
 
 # Traits and Size Classes
@@ -48,10 +50,12 @@ Steps for adding traits:
 
 ## Use `Add New Constraints`
 
-Alternatively you can use `Add New Constraints` selection at the bottom of the screen: 
+Alternatively you can use `Add New Constraints` selection at the bottom of the screen:
+
 ![alt text](./images/add_new_constraints.png "Add New Constrains")
 
 (top and right constrains selected)
+
 ![alt text](./images/add_new_constraints_view.png "Add New Constraints")
 
 ## Use `Resolve Auto Layout Issues`
