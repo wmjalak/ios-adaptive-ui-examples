@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KLf-54-oJK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Kdv-PU-hVG">
+            <objects>
+                <viewController id="KLf-54-oJK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z27-OX-kVt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDI-R6-x3c">
+                                <rect key="frame" x="16" y="270" width="343" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-uv-Tyn">
+                                <rect key="frame" x="16" y="321" width="343" height="194"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="eH3-rN-6HZ"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Wag-Re-anf">
+                                <rect key="frame" x="71" y="29" width="233" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="74m-aM-edi"/>
+                                    <constraint firstAttribute="width" constant="128" id="KgA-Ve-75E"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mct-uv-Tyn" firstAttribute="leading" secondItem="Wp6-7i-Ox3" secondAttribute="leading" constant="16" id="8bE-IE-lgv"/>
+                            <constraint firstItem="Wp6-7i-Ox3" firstAttribute="trailing" secondItem="Mct-uv-Tyn" secondAttribute="trailing" constant="16" id="9iQ-6g-qeB"/>
+                            <constraint firstItem="Wp6-7i-Ox3" firstAttribute="trailing" secondItem="uDI-R6-x3c" secondAttribute="trailing" constant="16" id="Bb4-Bb-9Gq"/>
+                            <constraint firstItem="Wag-Re-anf" firstAttribute="centerX" secondItem="Z27-OX-kVt" secondAttribute="centerX" id="PUl-4U-Vkj"/>
+                            <constraint firstItem="Mct-uv-Tyn" firstAttribute="top" secondItem="uDI-R6-x3c" secondAttribute="bottom" constant="8" id="WCm-WL-7gk"/>
+                            <constraint firstItem="Wag-Re-anf" firstAttribute="top" secondItem="Wp6-7i-Ox3" secondAttribute="top" constant="9" id="cPq-l8-QMu"/>
+                            <constraint firstItem="uDI-R6-x3c" firstAttribute="top" secondItem="Wp6-7i-Ox3" secondAttribute="top" constant="145" id="cZd-4g-7pl">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="uDI-R6-x3c" firstAttribute="leading" secondItem="Wp6-7i-Ox3" secondAttribute="leading" constant="16" id="eDe-Th-ldi"/>
+                            <constraint firstItem="uDI-R6-x3c" firstAttribute="top" secondItem="Wag-Re-anf" secondAttribute="bottom" constant="8" id="vrS-YL-tvS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wp6-7i-Ox3"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cZd-4g-7pl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="Wag-Re-anf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="cZd-4g-7pl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUp-32-vVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.5" y="47.535211267605632"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="233" height="233"/>
+    </resources>
+</document>

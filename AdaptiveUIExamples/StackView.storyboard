@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Klk-3i-GWK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vtT-4j-Vg4">
+            <objects>
+                <viewController id="Klk-3i-GWK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xvS-DL-G2i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KWy-H3-sdj">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sN2-5R-i5w">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="Left Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Center Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-Ia-Vnq">
+                                        <rect key="frame" x="118" y="0.0" width="98" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT1-qd-yIe">
+                                        <rect key="frame" x="257" y="0.0" width="86" height="30"/>
+                                        <state key="normal" title="Right Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="b29-ee-OjO">
+                                <rect key="frame" x="16" y="58" width="343" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="gD3-8r-1cn">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="YWI-Qy-6mi"/>
+                                            <constraint firstAttribute="height" constant="128" id="arF-Pt-jH9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Ua-QS-3r6">
+                                        <rect key="frame" x="128" y="0.0" width="215" height="41.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROx-jq-Mzw">
+                                                <rect key="frame" x="60" y="0.0" width="155" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sta-zq-acn">
+                                                <rect key="frame" x="155.5" y="25.5" width="59.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b29-ee-OjO" firstAttribute="top" secondItem="KWy-H3-sdj" secondAttribute="bottom" constant="8" id="4OZ-xg-gNR"/>
+                            <constraint firstItem="b29-ee-OjO" firstAttribute="leading" secondItem="FJB-aU-2fz" secondAttribute="leading" constant="16" id="91f-dO-C8e"/>
+                            <constraint firstItem="FJB-aU-2fz" firstAttribute="trailing" secondItem="KWy-H3-sdj" secondAttribute="trailing" constant="16" id="BPJ-LE-R0w"/>
+                            <constraint firstItem="KWy-H3-sdj" firstAttribute="leading" secondItem="FJB-aU-2fz" secondAttribute="leading" constant="16" id="CUw-Nk-Sal"/>
+                            <constraint firstItem="KWy-H3-sdj" firstAttribute="top" secondItem="FJB-aU-2fz" secondAttribute="top" id="gD4-pD-2Dq"/>
+                            <constraint firstItem="FJB-aU-2fz" firstAttribute="trailing" secondItem="b29-ee-OjO" secondAttribute="trailing" constant="16" id="t4e-PO-Z9Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FJB-aU-2fz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSK-YA-VDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2647.5" y="-734.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="233" height="233"/>
+    </resources>
+</document>
